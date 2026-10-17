@@ -1,0 +1,18 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.board {
+  display: flex;
+  gap: $spacing-lg;
+  padding: $spacing-xl;
+  align-items: flex-start;
+  overflow-x: auto;
+}
+
+.addColumnButton {
+  @include button-base;
+  padding: $spacing-sm $spacing-md;
+  min-width: $column-width;
+  border-style: dashed;
+  font-size: 14px;
+}
